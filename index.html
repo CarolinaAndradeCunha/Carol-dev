@@ -1,98 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carol Dev</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Boas-vindas -->
-  <section class="boas-vindas">
-    <h1>Carol Dev</h1>
-    <p>Desenvolvo sites que dão vida às ideias e impulsionam negócios.</p>
-  </section>
-
-  <!-- Sobre Mim -->
-  <section class="sobre" id="sobre">
-    <h2>Sobre Mim</h2>
-    <div class="conteudo-sobre">
-      <img src="minha-foto.jpg" alt="Foto da Carolina">
-      <p>Sou estudante de programação apaixonada por criar experiências únicas com sites lindos, funcionais e com personalidade. Aqui você acompanha minha jornada como dev — e pode contar comigo para dar vida às suas ideias e impulsionar seu negócio com presença digital de verdade.</p>
+  <header>
+    <div class="logo">
+      💻 <span>Carol Dev</span>
     </div>
-  </section>
+    <nav>
+      <a href="#paginas">Página Web</a>
+      <a href="#bots">Bot de WhatsApp</a>
+      <a href="#extras">Extras</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-<section class="servicos" id="servicos">
-  <h2>Serviços</h2>
-  <div class="cards-servicos">
-    <div class="card">
-      <h3>Criação de Sites</h3>
-      <p>Sites personalizados, responsivos e cheios de estilo para o público.</p>
-      <p>💰 A partir de R$ 150</p>
-    </div>
-
-    <div class="card">
-      <h3>Manutenção</h3>
-      <p>Ajustes, atualizações e melhorias em sites já existentes.</p>
-      <p>💰 A partir de R$ 30</p>
-    </div>
-
-    <div class="card">
-      <h3>Criação de álbuns de fotos</h3>
-      <p>Guarde memórias de um dia ou evento especial em um site pessoal, acessível apenas para quem você quiser.</p>
-      <p>💰 A partir de R$ 100</p>
-    </div>
-  </div>
-
-  <a href="https://wa.me/SEUNUMERO" class="btn-wpp">Fale comigo no WhatsApp</a>
+  <section class="apresentacao">
+  <img src="sua-foto.jpg" alt="Foto de perfil da Carol Dev" class="foto-perfil"/>
+  <h1>Carol Dev</h1>
+  <p>
+    Eu sou a Carol, desenvolvedora criativa que transforma ideias em presença digital marcante ✨.<br>
+    De páginas encantadoras a bots inteligentes, deixo seu projeto com personalidade própria. <br>
+    E se precisar de algo mais prático, como documentos no Word, também posso ajudar!
+  </p>
 </section>
 
-  <!-- Projetos -->
-  <section class="projetos" id="projetos">
-    <h2>Meus Projetos</h2>
-    <div class="galeria-projetos">
-      <!-- Exemplo de projeto -->
-      <div class="projeto">
-        <img src="projeto1.jpg" alt="Projeto 1">
-        <p>Site para pizzaria</p>
-      </div>
-      <div class="projeto">
-        <img src="projeto2.jpg" alt="Projeto 2">
-        <p>Landing page para psicologos</p>
-      </div>
-            <div class="projeto">
-        <img src="projeto3.jpg" alt="Projeto 1">
-        <p>Album de fotos</p>
-      </div>
-            <div class="projeto">
-        <img src="projeto4.jpg" alt="Projeto 1">
-        <p>Roteiro de viagem</p>
-      </div>
-            <div class="projeto">
-        <img src="projeto5.jpg" alt="Projeto 1">
-        <p>Guarde lembranças de uma viagem especial</p>
-      </div>
-    </div>
-  </section>
+  <main>
+    <section id="paginas">
+      <h2>Páginas Web</h2>
 
-  <!-- Canal YouTube -->
-  <section class="youtube" id="youtube">
-    <h2>Canal no YouTube</h2>
-    <p>Aprenda sobre desenvolvimento web comigo! 🌸</p>
-    <iframe width="360" height="215" src="https://www.youtube.com/watch?v=rLWiNa2MfyE" frameborder="0" allowfullscreen></iframe>
-  </section>
+      <article class="card">
+        <h3>Landing Page</h3>
+        <p><strong>Descrição:</strong> Ideal para divulgar eventos, serviços simples ou promoções.</p>
+        <p><strong>Preço:</strong> A partir de R$ 5O</p>
+        <button onclick="mostrarTabela()">Consultar Valores</button>
+      </article>
 
-  <!-- Contato -->
-  <section class="contato" id="contato">
-    <h2>Contato</h2>
-    <p>Vamos criar algo lindo juntos?</p>
-    <div class="botoes-contato">
-      <a href="https://wa.me/SEUNUMERO" class="btn-wpp">WhatsApp</a>
-      <a href="https://www.youtube.com/@CodeJourneyCarol" class="btn-yt">YouTube</a>
-    </div>
-  </section>
+      <article class="card">
+        <h3>One Page Profissional</h3>
+        <p><strong>Descrição:</strong> Página completa para apresentar sua empresa, com animações e seções modernas.</p>
+        <p><strong>Preço:</strong> A partir de R$ 150</p>
+        <button onclick="mostrarTabela()">Consultar Valores</button>
+      </article>
+    </section>
+
+    <section id="bots">
+      <h2>Bots de WhatsApp</h2>
+
+      <article class="card">
+        <h3>Bot Automático</h3>
+        <p><strong>Descrição:</strong>Menus, resposta por número, atendimento humano, personalizado por nicho ou com lógica condicional.</p>
+        <p><strong>Preço:</strong> A partir de 150</p>
+        <button onclick="mostrarTabela()">Consultar Valores</button>
+      </article>
+
+      <article class="card">
+        <h3>Bot Simples</h3>
+        <p><strong>Descrição:</strong> Até 4 respostas padrão, sem integração externa.</p>
+        <p><strong>Preço:</strong> A partir de R$ 80</p>
+        <button onclick="mostrarTabela()">Consultar Valores</button>
+      </article>
+    </section>
+
+    <section id="extras">
+      <h2>Extras</h2>
+
+      <article class="card">
+        <h3>Canva Personalizado</h3>
+        <p><strong>Descrição:</strong> Ajuda com artes visuais para redes sociais e identidade visual básica.</p>
+        <p><strong>Preço:</strong> A partir de R$ 5,00</p>
+        <button onclick="mostrarTabela()">Consultar Valores</button>
+      </article>
+
+      <article class="card">
+        <h3>Word</h3>
+        <p><strong>Descrição:</strong> Criação de arquivos organizados, com estilo profissional e editável.</p>
+        <p><strong>Preço:</strong> A partir de R$ 3,00</p>
+        <button onclick="mostrarTabela()">Consultar Valores</button>
+      </article>
+    </section>
+
+    <section class="duvida">
+      <p>❓ Está com dúvida sobre qual serviço é ideal para você?</p>
+      <a href="https://wa.me/+5515998458485" target="_blank" class="whatsapp-button">Fale comigo</a>
+    </section>
+
+ <section id="tabela" class="tabela-valores">
+  <h2>📊 Tabela de Valores</h2>
+
+  <h3>🌐 Páginas Web</h3>
+  <ul>
+    <li>
+      <strong>Landing Page:</strong> R$50 (mão de obra)
+      <ul>
+        <li>Incluso: estrutura básica personalizada, adaptação mobile, personalização completa do conteúdo e visual conforme a marca.</li>
+        <li>Adicionais:
+          <ul>
+            <li>Domínio .com + hospedagem anual: R$80 (R$70,53 custo + taxa de administração)</li>
+            <li>Contagem regressiva: R$10</li>
+            <li>Formulário de cadastro (ex: evento): R$30</li>
+            <li>Outros elementos personalizados: valor a combinar</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>One Page Profissional:</strong> R$150 (mão de obra)
+      <ul>
+        <li>Inclui: seções modernas (sobre, serviços, equipe, contato), adaptação mobile, animações suaves, personalização completa do conteúdo e visual conforme a marca.</li>
+        <li>Adicionais:
+          <ul>
+            <li>Domínio e hospedagem: (anuidade + taxa de administração) consultar valor no whatsapp</li>
+            <li>Manutenções mensais (opcional): R$50</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>🤖 Bots para WhatsApp</h3>
+  <ul>
+    <li>
+      <strong>Bot Simples:</strong> R$50 (até 4 respostas padrão, sem integração externa)
+      <ul>
+        <li>Hospedagem (via API ou plataforma): consultar valor + R$10 (administração)</li>
+        <li>Menus com opções interativas: +R$20</li>
+        <li>Lógica condicional (respostas por palavras-chave ou números): +R$30</li>
+        <li>Integração com site ou planilha: +R$40</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>🎨 Artes com Canva</h3>
+  <ul>
+    <li><strong>Criação de logo:</strong> R$50  
+      <br><small>Você pode me enviar suas ideias e cores preferidas.</small></li>
+    <li><strong>Posts para redes sociais:</strong>
+      <ul>
+        <li>3 posts: R$10</li>
+        <li>5 posts: R$20</li>
+        <li>10 posts: R$35</li>
+      </ul>
+    </li>
+    <li><strong>Capa e contra capa de caderno:</strong> R$20</li>
+    <li><strong>Agendinha personalizada:</strong> R$10</li>
+    <li><strong>Cartão de visita:</strong> R$8</li>
+    <li><strong>Outras artes e cadernos personalizados:</strong> Consultar no WhatsApp</li>
+  </ul>
+
+  <h3>📝 Documentos Word</h3>
+  <ul>
+    <li><strong>Digitação:</strong> R$3 (meia página) / R$6 (página cheia)</li>
+    <li><strong>Transformação de documentos (Doc, PDF):</strong> R$1,00 cada</li>
+    <li><strong>Outros documentos e serviços:</strong> A combinar</li>
+  </ul>
+
+  <a href="https://wa.me/+5515998458485" target="_blank" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20" style="vertical-align: middle; margin-right: 5px;">
+    Falar comigo no WhatsApp
+  </a>
+</section>
+
+  </main>
+
+  <footer id="contato">
+<p>📧 Email: <a href="mailto:andradecunhacarolina@gmail.com">andradecunhacarolina@gmail.com</a></p>
+<p>📺 YouTube: <a href="https://youtube.com/@CodeJourneyCarol" target="_blank">CodeJourneyCarol</a></p>
+
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
