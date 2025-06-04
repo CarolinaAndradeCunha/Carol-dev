@@ -90,7 +90,13 @@
       <a href="https://wa.me/+5515998458485" target="_blank" class="whatsapp-button">Fale comigo</a>
     </section>
 
- <section id="tabela" class="tabela-valores">
+<!-- Botão que ativa a tabela -->
+<section id="valores">
+  <button id="mostrarTabela">📊 Consultar Valores</button>
+</section>
+
+<!-- Tabela de Valores (oculta inicialmente) -->
+<section id="tabela" class="tabela-valores" style="display: none;">
   <h2>📊 Tabela de Valores</h2>
 
   <h3>🌐 Páginas Web</h3>
@@ -169,11 +175,20 @@
 
   </main>
 
-  <footer id="contato">
-<p>📧 Email: <a href="mailto:andradecunhacarolina@gmail.com">andradecunhacarolina@gmail.com</a></p>
-<p>📺 YouTube: <a href="https://youtube.com/@CodeJourneyCarol" target="_blank">CodeJourneyCarol</a></p>
-
-  </footer>
+<footer id="contato">
+  <div class="contato-item">
+    <img src="https://img.icons8.com/fluency/24/gmail.png" alt="Ícone de email" />
+    <a href="mailto:andradecunhacarolina@gmail.com">
+     Mande uma mensagem por email!
+    </a>
+  </div>
+  <div class="contato-item">
+    <img src="https://img.icons8.com/fluency/24/youtube-play.png" alt="Ícone do YouTube" />
+    <a href="https://youtube.com/@CodeJourneyCarol" target="_blank">
+    Assista meus vídeos no YouTube!
+    </a>
+  </div>
+</footer>
 
   <script src="script.js"></script>
 </body>
