@@ -229,8 +229,47 @@ h2 {
 }
 
 footer {
-  background-color: #ffe0eb;
+  background: linear-gradient(to right, #ffeef8, #fdfbff); /* Rosa claro + branco */
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  border-top: 2px solid #f7d4e6;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+footer .contato-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+footer .contato-item:hover {
+  transform: scale(1.05);
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+}
+
+footer a {
+  color: #cc0066; /* Rosa avermelhado da sua paleta */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #99004d;
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  footer .contato-item {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
 }
