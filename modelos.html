@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelos | Carol Dev</title>
+  <link rel="stylesheet" href="modelos.css">
+</head>
+<body>
+  <!-- HEADER PADRÃO -->
+  <header>
+    <h1>Carolina Dev</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="modelos.html" class="ativo">Modelos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="modelos">
+      <h2>Modelos disponíveis</h2>
+
+      <!-- FILTRO DE CATEGORIA -->
+      <div class="filtros">
+        <button class="filtro ativo" data-categoria="todos">Todos</button>
+        <button class="filtro" data-categoria="landing">Landing Pages</button>
+        <button class="filtro" data-categoria="website">Websites</button>
+        <button class="filtro" data-categoria="canva">Canva</button>
+      </div>
+
+      <!-- GALERIA DE MODELOS -->
+      <div class="galeria">
+        <div class="card" data-categoria="landing">
+          <img src="img/landing1.jpg" alt="Modelo Landing 1">
+          <h3>Landing Page 1</h3>
+          <a href="https://seulink1.com" target="_blank">Ver modelo</a>
+        </div>
+
+        <div class="card" data-categoria="website">
+          <img src="img/site1.jpg" alt="Modelo Website 1">
+          <h3>Website 1</h3>
+          <a href="https://seulink2.com" target="_blank">Ver modelo</a>
+        </div>
+
+        <div class="card" data-categoria="canva">
+          <img src="img/canva1.jpg" alt="Modelo Canva 1">
+          <h3>Canva 1</h3>
+          <a href="https://seulink3.com" target="_blank">Ver modelo</a>
+        </div>
+
+        <!-- Adicione mais cards conforme for criando -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER PADRÃO -->
+  <footer>
+    <p>Entre em contato:</p>
+    <ul>
+      <li>Email: <a href="mailto:seuemail@email.com">seuemail@email.com</a></li>
+      <li>WhatsApp: <a href="https://wa.me/seunumero" target="_blank">Falar no WhatsApp</a></li>
+      <li>YouTube: <a href="https://youtube.com/@seucanal" target="_blank">Visitar canal</a></li>
+    </ul>
+  </footer>
+
+  <script src="modelos.js"></script>
+</body>
+</html>
