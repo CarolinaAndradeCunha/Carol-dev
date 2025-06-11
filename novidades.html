@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novidades - Seu Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header padrão -->
+  <header class="header">
+    <h1 class="logo">SeuSite</h1>
+    <nav class="nav-menu">
+      <a href="#novidades">Novidades</a>
+      <a href="#contato">Contato</a>
+      <a href="#outro">Outro</a>
+    </nav>
+  </header>
+
+  <!-- Seção Novidades -->
+  <main>
+    <section id="novidades" class="novidades" aria-label="Seção de novidades e sugestões">
+      <h2>Novidades</h2>
+
+      <!-- Botão estilo cremoso -->
+      <button id="btn-raspadinha" class="btn-raspadinha" aria-label="Clique para descobrir a novidade">
+        Clique para descobrir a novidade!
+      </button>
+
+      <!-- Mensagem que vai aparecer no lugar do botão -->
+      <p id="msg-novidade" class="msg-novidade" role="alert" aria-live="polite" hidden>
+        🤖 Em breve teremos chatbots incríveis para te ajudar! ✨
+      </p>
+
+      <!-- Campo de sugestões anônimas -->
+      <form id="form-sugestao" class="form-sugestao" action="https://formspree.io/f/seu-id-aqui" method="POST" aria-label="Formulário de sugestões anônimas">
+        <label for="sugestao">Deixe sua sugestão de novidades para eu trazer (é anônimo):</label>
+        <textarea id="sugestao" name="sugestao" rows="4" placeholder="Digite sua sugestão aqui..." required></textarea>
+        <button type="submit" class="btn-enviar">Enviar sugestão</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer padrão -->
+  <footer class="footer" role="contentinfo" id="contato">
+    <div class="contatos">
+      <a href="mailto:seuemail@exemplo.com" target="_blank" rel="noopener" aria-label="Enviar email">
+        📧 seuemail@exemplo.com
+      </a>
+      <a href="https://wa.me/5599999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+        📱 WhatsApp
+      </a>
+      <a href="https://www.youtube.com/seucanal" target="_blank" rel="noopener" aria-label="YouTube">
+        ▶️ YouTube
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
