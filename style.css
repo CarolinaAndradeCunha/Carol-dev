@@ -1,37 +1,4 @@
-/* ==========================
-   Variáveis de todas as páginas
-========================== */
-
-:root {
-  /* home.css */
-  --home-cor-fundo: #1b1b1b;
-  --home-cor-principal: #e63946; /* rosa-avermelhado */
-  --home-cor-destaque: #ffb6c1;
-  --home-cor-glitter: #fce4ec;
-  --home-cor-texto: #fff;
-  --home-borda-card: #fcd5ce;
-  --home-cor-hover: #fae1e7;
-
-  /* modelos.css */
-  --mod-cor-fundo: #fff;
-  --mod-cor-principal: #e63946; /* rosa-avermelhado */
-  --mod-cor-destaque: #ffb6c1;
-  --mod-cor-glitter: #fce4ec;
-  --mod-cor-texto: #333;
-  --mod-borda-card: #fcd5ce;
-  --mod-cor-hover: #fae1e7;
-
-  /* projreais.css */
-  --proj-cor-rosa: #e84e8c;
-  --proj-cor-rosa-claro: #fbe4ed;
-  --proj-cor-glitter: #f3c8f8;
-  --proj-cor-preto: #222;
-  --proj-cor-branco: #fff;
-}
-
-/* ==========================
-   Reset e global
-========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
   margin: 0;
@@ -39,383 +6,181 @@
   box-sizing: border-box;
 }
 
-/* Body geral - home, modelos e projreais têm backgrounds diferentes. Vamos segmentar por página */
-
-body.home {
+body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--home-cor-fundo);
-  color: var(--home-cor-texto);
-  line-height: 1.6;
-  padding: 0 1rem;
+  background-color: #ff8080; /* fundo rosa claro */
+  color: #0b0b0b;
 }
 
-body.modelos {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--mod-cor-fundo);
-  color: var(--mod-cor-texto);
-  line-height: 1.6;
-  padding: 0 1rem;
-}
-
-body.projreais {
-  font-family: 'Raleway', sans-serif;
-  background-color: var(--proj-cor-branco);
-  color: var(--proj-cor-preto);
-  line-height: 1.6;
-  padding-top: 80px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-/* ==========================
-   HEADER - estilos por página
-========================== */
-
-/* home */
-body.home header {
-  background-color: var(--home-cor-principal);
-  color: white;
-  padding: 1rem;
+/* Página inicial */
+.home {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  height: 100vh;
+  padding: 2rem;
 }
 
-body.home header h1 {
-  font-size: 1.5rem;
-}
-
-body.home nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-body.home nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-body.home nav a:hover,
-body.home nav a.ativo {
-  background-color: var(--home-cor-destaque);
-  color: var(--home-cor-texto);
-}
-
-/* modelos */
-body.modelos header {
-  background-color: var(--mod-cor-principal);
-  color: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-body.modelos header h1 {
-  font-size: 1.5rem;
-}
-
-body.modelos nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-body.modelos nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-body.modelos nav a:hover,
-body.modelos nav a.ativo {
-  background-color: var(--mod-cor-destaque);
-  color: var(--mod-cor-texto);
-}
-
-/* projreais */
-body.projreais header {
-  position: fixed;
-  top: 0;
+/* Bloco branco central */
+.box-branco {
+  background-color: #f8f3f2; /* branco suave */
+  border-radius: 2rem;
+  padding: 3rem;
   width: 100%;
-  background-color: var(--proj-cor-rosa);
-  color: var(--proj-cor-branco);
+  max-width: 900px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  animation: subir 0.8s ease forwards;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
 }
 
-body.projreais header h1 {
-  font-size: 1.8rem;
-}
-
-body.projreais nav ul {
-  list-style: none;
+/* Container para imagem + texto */
+.texto-e-foto {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom:2rem;
 }
 
-body.projreais nav a {
-  color: var(--proj-cor-branco);
+/* Foto ao lado do nome */
+.perfil-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #dab031;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Título e subtítulo */
+.texto-apresentacao h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #0b0b0b;
+}
+
+.subtexto {
+  font-size: 1.2rem;
+  color: #d52d44;
+  margin-bottom: 2rem;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #ff4d4d;
+  color: #f8f3f2;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+ background-color: #0b0b0b;
+  transform: scale(1.05);
+}
+
+/* Contato discreto */
+.contato-discreto {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+.contato-discreto p {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contato-discreto img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.contato-discreto a {
+  color: #666;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
-body.projreais nav a:hover,
-body.projreais nav a.ativo {
-  text-decoration: underline;
+.contato-discreto a:hover {
+  color: #dab031;
 }
 
-/* ==========================
-   SEÇÕES ESPECÍFICAS
-========================== */
-
-/* HOME - cards, botões, footer, etc - prefixar com .home */
-
-.home .card {
-  background-color: var(--home-cor-glitter);
-  border: 2px solid var(--home-borda-card);
-  border-radius: 15px;
-  padding: 1rem;
-  box-shadow: 0 0 10px rgba(236, 64, 122, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Animação */
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.home .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(236, 64, 122, 0.5);
+/* Responsivo */
+@media (max-width: 768px) {
+  .box-branco {
+    padding: 2rem 1.5rem;
+  }
+
+  .texto-e-foto {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .texto-apresentacao h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtexto {
+    font-size: 1.1rem;
+  }
 }
 
-.home .card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-}
-
-.home .card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.home .card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  background-color: var(--home-cor-principal);
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.home .card a:hover {
-  background-color: var(--home-cor-hover);
-  color: var(--home-cor-texto);
-}
-
-.home footer {
-  background-color: var(--home-cor-principal);
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
-}
-
-.home footer ul {
-  list-style: none;
-  padding-top: 1rem;
-}
-
-.home footer a {
-  color: white;
-  text-decoration: underline;
-}
-
-/* MODELOS - cards, filtros, footer */
-
-.modelos .filtros {
-  margin-bottom: 2rem;
+  font-size: 28px;
+  padding: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: transform 0.3s ease;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;
 }
 
-.modelos .filtro {
-  background-color: var(--mod-cor-glitter);
-  border: 2px solid var(--mod-cor-principal);
-  color: var(--mod-cor-principal);
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s;
-}
-
-.modelos .filtro:hover,
-.modelos .filtro.ativo {
-  background-color: var(--mod-cor-principal);
-  color: white;
-}
-
-.modelos .galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.modelos .card {
-  background-color: var(--mod-cor-glitter);
-  border: 2px solid var(--mod-borda-card);
-  border-radius: 16px;
-  padding: 1rem;
-  box-shadow: 0 0 10px rgba(236, 64, 122, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.modelos .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(236, 64, 122, 0.3);
-}
-
-.modelos .card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-}
-
-.modelos .card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.modelos .card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  background-color: var(--mod-cor-principal);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.modelos .card a:hover {
-  background-color: var(--mod-cor-hover);
-  color: var(--mod-cor-texto);
-}
-
-.modelos footer {
-  background-color: var(--mod-cor-principal);
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
-}
-
-.modelos footer ul {
-  list-style: none;
-  padding-top: 1rem;
-}
-
-.modelos footer a {
-  color: white;
-  text-decoration: underline;
-}
-
-/* PROJREIAS - cards, footer */
-
-.projreais main {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.projreais .projetos-reais h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  color: var(--proj-cor-rosa);
-  margin-bottom: 1rem;
-}
-
-.projreais .projetos-reais .descricao {
-  text-align: center;
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 2rem;
-}
-
-.projreais .galeria-projetos {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.projreais .card-projeto {
-  background-color: var(--proj-cor-rosa-claro);
-  border: 2px solid var(--proj-cor-glitter);
-  border-radius: 20px;
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projreais .card-projeto:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.projreais .card-projeto img {
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 1rem;
-}
-
-.projreais .card-projeto h3 {
-  font-size: 1.4rem;
-  color: var(--proj-cor-rosa);
-  margin-bottom: 0.5rem;
-}
-
-.projreais .card-projeto p {
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-  color: #444;
-}
-
-.projreais .card-projeto a {
-  background-color: var(--proj-cor-rosa);
-  color: var(--proj-cor-branco);
-  padding: 0.6rem 1.2rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.projreais .card-projeto a:hover {
-  background-color: var(--proj-cor-preto);
-}
-
-.projreais footer {
-  background-color: var(--proj-cor-rosa);
-  color: var(--proj-cor-branco);
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 4rem;
-}
-
-.projreais footer a {
-  color: var(--proj-cor-branco);
-  text-decoration: underline;
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }
