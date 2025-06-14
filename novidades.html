@@ -3,12 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Novidades - Seu Site</title>
-  <link rel="stylesheet" href="style.css" /><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Novidades | Carol Dev</title>
   <link rel="stylesheet" href="novidades.css" />
   <!-- FontAwesome para ícones -->
@@ -16,6 +10,7 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header class="topo">
     <div class="marca">
       <div class="icone-circulo">
@@ -31,75 +26,39 @@
     </nav>
   </header>
 
+  <!-- Main -->
   <main>
-    <h1>Em breve</h1>
+    <section class="novidade">
+      <h1>Em breve</h1>
+      <button id="botao-raspadinha">Clique e descubra</button>
+      <p id="mensagem-novidade"></p>
+    </section>
 
-    <button id="botao-raspadinha">Clique e descubra</button>
+    <section class="votacao-container">
+      <h2>E depois, o que você quer ver aqui?</h2>
+      <div class="votacao">
+        <button class="voto">Versão app dos sites</button>
+        <button class="voto">App de jogo</button>
+        <button class="voto">App pessoal</button>
+      </div>
+      <p id="resposta-voto"></p>
+    </section>
 
-    <p id="mensagem-novidade"></p>
-  </main>
-      <h2>E depois, o que voce quer ver aqui</h2>
-<div class="votacao">
-  <button class="voto">Versao app dos sites</button>
-  <button class="voto">App de jogo</button>
-  <button class="voto">App pessoal</button>
-<p id="resposta-voto"></p>
-
-
-  <footer class="rodape">
-    <a href="mailto:andradecunhacarolina@gmail.com"><i class="fas fa-envelope"></i> andradecunhacarolina@gmail.com</a> |
-    <a href="https://wa.me/5515996613124" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> (15) 996613124</a> |
-    <a href="https://youtube.com/@codejourneycarol" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> @codejourneycarol</a>
-  </footer>
-
-  <script src="novidades.js"></script>
-</body>
-</html>
-</head>
-<body class="novidades">
-
-  <!-- Header padrão -->
-  <header class="header">
-    <h1 class="logo">Carol Dev</h1>
-    <nav class="nav-menu">
-      <a href="#index">Início</a>
-      <a href="#modelos">Modelos</a>
-      <a href="#projreais">Projetos Reais</a>
-    </nav>
-  </header>
-
-  <!-- Seção Novidades -->
-  <main>
-    <section id="novidades" class="novidades" aria-label="Seção de novidades e sugestões">
-      <h2>Novidades</h2>
-
-      <!-- Botão estilo cremoso -->
-      <button id="btn-raspadinha" class="btn-raspadinha" aria-label="Clique para descobrir a novidade">
-        Clique para descobrir a novidade!
-      </button>
-
-      <!-- Mensagem que vai aparecer no lugar do botão -->
-      <p id="msg-novidade" class="msg-novidade" role="alert" aria-live="polite" hidden>
-        🤖 Em breve teremos chatbots incríveis para te ajudar! ✨
-      </p>
-
-      <!-- Campo de sugestões anônimas -->
-      <form id="form-sugestao" class="form-sugestao" action="https://formspree.io/f/seu-id-aqui" method="POST" aria-label="Formulário de sugestões anônimas">
-        <label for="sugestao">Deixe sua sugestão de novidades para eu trazer (é anônimo):</label>
+    <section class="sugestao-container">
+      <h2>Deixe sua sugestão anônima</h2>
+      <form id="form-sugestao" action="https://formspree.io/f/seu-id-aqui" method="POST">
+        <label for="sugestao">O que você gostaria de ver por aqui?</label>
         <textarea id="sugestao" name="sugestao" rows="4" placeholder="Digite sua sugestão aqui..." required></textarea>
         <button type="submit" class="btn-enviar">Enviar sugestão</button>
       </form>
     </section>
   </main>
 
-  <!-- Footer padrão -->
-  <footer>
-    <p>Entre em contato comigo: 
-      <a href="https://wa.me/5515996613124" target="_blank">WhatsApp</a> | 
-      <a href="andradecunhacarolina@gmail.com">E-mail</a>
-    </p>
-    <p>Acompanhe meu canal:
-      <a href="https://https://www.youtube.com/@CodeJourneyCarol">Youtube</a>
+  <!-- Footer -->
+  <footer class="rodape">
+    <a href="mailto:andradecunhacarolina@gmail.com"><i class="fas fa-envelope"></i> andradecunhacarolina@gmail.com</a> |
+    <a href="https://wa.me/5515996613124" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> (15) 99661-3124</a> |
+    <a href="https://youtube.com/@codejourneycarol" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> @codejourneycarol</a>
   </footer>
 
   <script src="novidades.js"></script>
