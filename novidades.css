@@ -91,33 +91,23 @@ a {
 /* ===== MAIN ===== */
 main {
   max-width: 700px;
-  margin: 100px auto 120px;
+  margin: 100px auto 130px;
   background: white;
   padding: 30px 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
   text-align: center;
-  padding-bottom: 100px;
 }
 
-main h1 {
-  font-size: 2.2rem;
-  margin-bottom: 40px;
+main h1, main h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: var(--rosa-escuro);
-}
-
-.rodape {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
-  text-align: center;
 }
 
 /* ===== BOTÃO RASPADINHA ===== */
 #botao-raspadinha {
-  background: linear-gradient(135deg, var(--rosa-claro) 0%, var(--rosa-escuro) 100%);
+  background: linear-gradient(135deg, var(--rosa-claro), var(--rosa-escuro));
   border: none;
   color: white;
   padding: 14px 28px;
@@ -132,27 +122,8 @@ main h1 {
 }
 
 #botao-raspadinha:active {
-  background: linear-gradient(135deg, #d94a4a 0%, #bf3d3d 100%);
-  box-shadow: 0 2px 6px rgba(183, 54, 54, 0.6);
   transform: scale(0.97);
-}
-
-#botao-raspadinha::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: rotate(25deg);
-  transition: all 0.4s ease;
-}
-
-#botao-raspadinha:active::before {
-  top: 150%;
-  left: 150%;
-  transition: all 0.2s ease;
+  background: linear-gradient(135deg, #d94a4a, #bf3d3d);
 }
 
 #mensagem-novidade {
@@ -164,17 +135,15 @@ main h1 {
 }
 
 /* ===== VOTAÇÃO ===== */
-h2 {
-  margin-top: 40px;
-  font-size: 1.5rem;
-  color: var(--rosa-escuro);
+.votacao-container {
+  margin-top: 50px;
 }
 
 .votacao {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 .voto {
@@ -199,6 +168,42 @@ h2 {
   margin-top: 15px;
   font-weight: 600;
   color: var(--rosa-escuro);
+}
+
+/* ===== SUGESTÃO ===== */
+.sugestao-container {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.sugestao-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sugestao-container textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.btn-enviar {
+  align-self: flex-start;
+  padding: 12px 20px;
+  background-color: var(--rosa-escuro);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #d93a3a;
 }
 
 /* ===== FOOTER ===== */
@@ -232,7 +237,7 @@ h2 {
 /* ===== RESPONSIVO ===== */
 @media (max-width: 600px) {
   main {
-    margin: 90px 15px 120px;
+    margin: 90px 15px 130px;
     padding: 25px 20px;
   }
 
@@ -243,5 +248,13 @@ h2 {
 
   .menu a {
     margin: 5px 8px;
+  }
+
+  .votacao {
+    align-items: stretch;
+  }
+
+  .sugestao-container form {
+    gap: 10px;
   }
 }
