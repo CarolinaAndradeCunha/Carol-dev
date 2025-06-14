@@ -2,72 +2,83 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Carol Dev - Serviços</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços | Carol Dev</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="icon" href="assets/favicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="servicos">
-  <header>
-    <div class="logo">
-      💻 <span>Carol Dev</span>
+<body>
+
+  <header class="topo">
+  <div class="marca">
+    <div class="icone-circulo">
+      <img src="images/symbol.png" alt="Ícone Carol Dev">
     </div>
-    <nav>
+    <span>Carol Dev</span>
+  </div>
+    <nav class="menu">
       <a href="index.html">Início</a>
+      <a href="servicos.html" class="ativo">Serviços</a>
       <a href="novidades.html">Novidades</a>
       <a href="modelos.html">Modelos</a>
-      <a href="projetos.html">Projetos Reais</a>
     </nav>
   </header>
 
-  <main>
-    <section class="servicos">
-      <h2>Meus Serviços</h2>
+  <main class="conteudo-servicos">
+    <h1>Meus Serviços</h1>
+    <ul class="lista-servicos">
+      <li>📢 Landing pages – <strong>R$ 200</strong> <br><span>Incluso: domínio e hospedagem</span></li>
+      <li>📄 Webpages (One Page) – <strong>R$ 300</strong> <br><span>Incluso: domínio e hospedagem</span></li>
+      <li>🌐 Sites completos – <strong>R$ 500</strong></li> <br><span>Incluso: domínio e hospedagem</span></li>
+      <li>🎨 Logotipo simples – <strong>R$ 20</strong></li>
+      <li>📸 Propaganda / post – <strong>R$ 5</strong></li>
+      <li>💳 Cartão digital – <strong>R$ 8</strong></li>
+      <li>📓 Cadernos / planners – <strong>R$ 30</strong></li>
+      <li>⌨️ Digitação – <strong>R$ 5/página</strong></li>
+      <li>📝 Edição no Word – <strong>R$ 10</strong></li>
+      <li>📄 Currículos – <strong>R$ 10</strong></li>
+    </ul>
 
-      <article class="card">
-        <h3>Landing Pages</h3>
-        <p>Desenvolvo páginas de alta conversão para divulgar seu evento, serviços ou promoções, com design responsivo e foco no seu público.</p>
-        <a href="https://wa.me/5515996613124" target="_blank" class="botao">Consultar Valores</a>
-      </article>
-      
-      <article class="card">
-        <h3>Site Profissional</h3>
-        <p>Criação de sites personalizados para profissionais e empresas, com múltiplas páginas, design moderno e funcionalidade completa.</p>
-        <a href="https://wa.me/5515996613124" target="_blank" class="botao">Consultar Valores</a>
-      </article>
-     
-      <article class="card">
-        <h3>Loja Virtual</h3>
-        <p>Desenvolvo e-commerces completos, intuitivos e seguros para você vender seus produtos online com facilidade e confiança.</p>
-        <a href="https://wa.me/5515996613124" target="_blank" class="botao">Consultar Valores</a>
-      </article>
+    <h2>Pacotes</h2>
+    <div class="pacotes">
+      <div class="pacote">
+        <h3>🌱 Pacote Início Profissional<span>R$ 230</span></h3>
+        <ul>
+          <li>Landing page com domínio e hospedagem</li>
+          <li>Logotipo simples</li>
+          <li>2 posts de divulgação</li>
+        </ul>
+      </div>
 
-      <article class="card">
-        <h3>Artes no Canva</h3>
-        <p>Criação de artes personalizadas para divulgação, cadernos decorados, logos e muito mais, com criatividade e profissionalismo.</p>
-        <a href="https://wa.me/5515996613124" target="_blank" class="botao">Consultar Valores</a>
-      </article>
+      <div class="pacote">
+        <h3>🎯 Pacote Identidade Digital<span>R$ 350</span></h3>
+        <ul>
+          <li>Webpage com domínio e hospedagem</li>
+          <li>Logotipo simples</li>
+          <li>3 posts + 1 cartão digital</li>
+        </ul>
+      </div>
 
-      <article class="card">
-        <h3>Documentos no Word</h3>
-        <p>Elaboração e edição de documentos profissionais e pessoais, economizando seu tempo com qualidade e precisão.</p>
-        <a href="https://wa.me/5515996613124" target="_blank" class="botao">Consultar Valores</a>
-      </article>
-   
-    </section>
+      <div class="pacote">
+        <h3>💼 Pacote Empresa Pronta <span>R$ 600</span></h3>
+        <ul>
+          <li>Site completo (1 a 3 páginas)</li>
+          <li>Logotipo</li>
+          <li>5 posts</li>
+        </ul>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>Entre em contato comigo: 
-      <a href="https://wa.me/5515996613124" target="_blank">WhatsApp</a> | 
-      <a href="mailto:andradecunhacarolina@gmail.com">E-mail</a>
-    </p>
-    <p>Acompanhe meu canal:
-      <a href="https://www.youtube.com/@CodeJourneyCarol" target="_blank">Youtube</a>
+  <footer class="rodape">
+    <p>
+      <i class="fab fa-whatsapp"></i> <a href="https://wa.me/5515996613124" target="_blank">(15) 996613124</a> |
+      <i class="fas fa-envelope"></i> <a href="mailto:andradecunhacarolina@gmail.com">andradecunhacarolina@gmail.com</a> |
+      <i class="fab fa-youtube"></i> <a href="https://www.youtube.com/@codejourneycarol" target="_blank">@codejourneycarol</a>
     </p>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
+<script src="js/script.js"></script>
 </html>
