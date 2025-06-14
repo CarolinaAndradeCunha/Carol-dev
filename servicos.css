@@ -29,7 +29,6 @@ a {
 
 /* HEADER FIXO */
 .topo {
-  color: var(--white);
   position: fixed;
   top: 0;
   width: 100%;
@@ -164,7 +163,6 @@ a {
 
 /* FOOTER FIXO */
 .rodape {
-    color: var(--white);
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -176,7 +174,7 @@ a {
 }
 
 .rodape a {
-  color: var(--white);
+  color: var(--preto);
   margin: 0 10px;
   font-weight: 500;
 }
